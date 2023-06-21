@@ -1,0 +1,70 @@
+{
+  "name": "side-protocol",
+  "version": "0.1.0",
+  "homepage": "https://ast077.github.io/",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.5.1",
+    "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.14",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "classnames": "^2.3.2",
+    "echarts": "^5.4.1",
+    "echarts-for-react": "^3.0.2",
+    "framer-motion": "^10.0.1",
+    "keen-slider": "^6.8.5",
+    "lodash": "^4.17.21",
+    "lodash.throttle": "^4.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.1",
+    "react-typed": "^1.2.0",
+    "react-typist": "^2.0.5",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "antd": "4.24.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "yarn run build && gh-pages -d build",
+    "fmt": "prettier --write ."
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash.throttle": "^4.1.7",
+    "@types/react-router-hash-link": "^2.4.6",
+    "@types/react-typist": "^2.0.3",
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.8"
+  }
+}

@@ -1,0 +1,148 @@
+.portfolioContainer {
+  position: relative;
+  width: 100%;
+  min-height: 780px;
+}
+
+.portfolioInnerContainer {
+  margin: 0 auto;
+  max-width: 1240px;
+  height: 710px;
+  position: relative;
+}
+
+.portfolioInnerContainerBg {
+  width: 1444px;
+  height: 710px;
+  background: url("../../assets/image/portfolio/moom.png") no-repeat;
+  position: absolute;
+  left: -130px;
+  top: 0;
+  background-size: cover;
+  /* animation: blink 1s infinite; */
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 5px #f7f5e6;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #f7f5e6;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #f7f5e6;
+  }
+}
+
+.portfolioInnerContainerR {
+  width: 720px;
+  height: 100%;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 11;
+}
+
+
+
+.portfolioInnerContainerText {
+  width: 560px;
+  height: auto;
+  margin: 180px 0 50px 0;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+}
+
+.portfolioInnerContainerText span {
+  font-weight: 800;
+}
+
+.portfolioInnerContainerButton {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #fff;
+
+  width: 203px;
+
+  background: #000;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 1px solid #fff;
+
+  transition: .2s;
+}
+
+.portfolioInnerContainerButton:hover {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+
+}
+
+.arrows {
+  width: 17px;
+  height: 17px;
+  background: url("../../assets/image/arrow.svg") no-repeat;
+  cursor: pointer;
+}
+
+.arrows:hover {
+  width: 22px;
+  height: 22px;
+  background: url("../../assets/image/arrowrRight.svg") no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+  .portfolioInnerContainer {
+    width: 100%;
+  }
+
+  .portfolioContainer {
+    min-height: 300px !important;
+  }
+
+  .portfolioInnerContainer {
+    height: 300px;
+  }
+
+  .portfolioInnerContainerBg {
+    width: 386px;
+    height: 400px;
+    left: -100px;
+  }
+
+  .portfolioInnerContainerR {
+    width: 88%;
+    margin: 0 auto;
+    float: none;
+    left: 0;
+  }
+
+  .portfolioInnerContainerText {
+    font-size: 19px;
+    width: 100%;
+    margin-top: 118px;
+    margin-bottom: 20px;
+  }
+}

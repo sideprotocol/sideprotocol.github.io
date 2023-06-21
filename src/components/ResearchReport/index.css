@@ -1,0 +1,308 @@
+.researchContainer {
+  position: relative;
+  /* background-color: #000; */
+  width: 100%;
+  height: 800px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.mg {
+  margin-top: 180px;
+}
+
+.researUlImg {
+  display: none;
+}
+
+.researchContentSildeBox {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.researchContentSildeBoxW {
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.moon {
+  position: absolute;
+  left: 49%;
+  top: -18%;
+  width: 22px;
+  height: 37px;
+  background: url("../../assets/image/research/Vector.png");
+  /* animation: blink 1s infinite; */
+}
+
+.moon1 {
+  position: absolute;
+  left: 49%;
+  bottom: -20%;
+  width: 22px;
+  height: 37px;
+  background: url("../../assets/image/research/Vector.png");
+  /* animation: blink 1s infinite; */
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 5px #f7f5e6;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #f7f5e6;
+  }
+
+  100% {
+    box-shadow: 0 0 5px #f7f5e6;
+  }
+}
+
+.researchContentBox {
+  width: 10px;
+  height: 530px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.researchContentBoxHs {
+  width: 6px;
+  height: 100%;
+}
+
+
+.researchContentClick {
+  width: 49%;
+  height: 100px;
+  float: left;
+  margin-left: 2%;
+}
+
+.researchContentImg {
+  width: 40%;
+  height: 100px;
+  float: right;
+  transition: .5;
+}
+
+.researUl {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.researUl li {
+  width: 100%;
+  height: 106px;
+  color: #fff;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: .2s;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+.researUl li:hover {
+  padding-top: 2px;
+}
+
+.liActive {
+  padding-top: 2px !important;
+}
+
+.researUl li h5 {
+  width: 100%;
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.active {
+  height: auto !important;
+  color: #fff !important;
+  text-overflow: initial !important;
+  white-space: normal !important;
+}
+
+.researUlImg {
+  display: none;
+}
+
+.researUl li p {
+  width: 100%;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* text-transform: capitalize; */
+  color: #BDBDBD;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+.researUl li:hover p {
+  height: auto;
+  text-overflow: initial;
+  white-space: normal;
+}
+
+.moon1 {
+  bottom: -20%;
+}
+
+.researUl li p:hover {
+  color: #fff;
+}
+
+.researchContent {
+  max-width: 1240px;
+  margin: 100px auto 0 auto;
+}
+
+.researchBg {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  background-size: cover !important;
+  background-repeat: repeat-x !important;
+  height: 500px;
+  background: url("../../assets/image/research/bg.svg");
+  z-index: 100;
+}
+
+.researchUpperFlex {
+  justify-content: "space-between";
+  margin-top: 50px;
+}
+
+.researchSlogan {
+  font-family: "Panchang";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: black;
+}
+
+.researchText {
+  margin-top: 30px;
+  font-family: "rumiko-clear-demo", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: black;
+  width: 40%;
+}
+
+.researchSlideStartIndexer,
+.researchSlideCurrentIndexer {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  z-index: 400;
+}
+
+.researchSlideCurrentIndexer {
+  top: -15px;
+  width: 3px;
+  height: 80px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .researchContainer {
+    padding: 0 5%;
+    width: 100%;
+    height: 900px;
+    /* overflow: hidden; */
+  }
+
+  .researchContent {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .researchContentSildeBox,
+  .researchContentSildeBoxW,
+  .researchContentClick {
+    width: 100%;
+  }
+
+  .researchContentImg {
+    display: none;
+  }
+
+  .researUl li {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /* padding: 0px 10px; */
+    /* box-sizing: border-box; */
+    height: auto;
+    margin-top: 0px;
+
+  }
+
+
+  .title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 120%;
+    /* or 58px */
+
+    text-align: center;
+    text-transform: none;
+
+    color: #FFFFFF;
+  }
+
+  .mg {
+    /* margin-top: 100px; */
+  }
+
+  .researUlImg {
+    width: 230px;
+    margin: 30px auto;
+    display: block;
+  }
+
+  .researchContentBox {
+    height: 760px;
+  }
+
+  .moon {
+    top: -15%;
+  }
+}
