@@ -1,0 +1,49 @@
+.joinButton {
+  width: 150px;
+  height: 46px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #ed0dfd -4.23%, #24bce3 104.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+
+.JoinButtonBg {
+  border-radius: 7px;
+  background: #120323;
+  text-align: center;
+  line-height: 46px;
+}
+.JoinButtonBg:hover {
+  background: linear-gradient(90deg, #ed0dfd -4.23%, #24bce3 104.23%);
+}
+.JoinButtonBg:hover .joinButton {
+  -webkit-text-fill-color: #120323;
+}
+
+.JoinButtonBox {
+  border-radius: 7px;
+  width: 154px;
+  height: 50px;
+  padding: 2px;
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 33px;
+  cursor: "pointer";
+  background: linear-gradient(90deg, #ed0dfd -4.23%, #24bce3 104.23%);
+}
+
+.modalJoinButtonText {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .JoinButtonBox {
+    width: 100px;
+  }
+  .joinButton {
+    width: 100px;
+    font-size: 12px;
+  }
+}

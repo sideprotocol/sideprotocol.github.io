@@ -1,0 +1,287 @@
+.bannerContainer {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 1100px;
+  padding: 80px 5%;
+  /* margin-top: 100px; */
+  overflow: hidden;
+}
+
+.bannerContent {
+  position: relative;
+  max-width: 1240px;
+  margin: auto;
+  z-index: 100;
+  margin-top: 160px;
+}
+
+.bannerBg1,
+.bannerBg2 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  /* background-size: cover !important; */
+  background-repeat: no-repeat !important;
+}
+
+.bannerBg1 {
+  height: 900px;
+  background: url("../../assets/image/banner/bg1.png") center;
+  z-index: 10;
+}
+
+
+.bannerSlogan {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 96px;
+  /* text-transform: uppercase; */
+  color: white;
+  text-align: center;
+}
+
+.bannerButtomText {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: white;
+}
+
+.bannerText {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.bannerEmbraceText {
+  margin-top: 260px;
+}
+
+.species {
+  height: 52px;
+  width: 52px;
+  display: inline-block;
+  vertical-align: sub;
+  margin-left: 16px;
+  background: url("../../assets/image/banner/species.png");
+  z-index: 100;
+  animation: spinCoin 3s infinite linear;
+}
+
+@keyframes spinCoin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bannerButton {
+  width: 172px;
+  height: 44px;
+  border: 1.5px solid #2b2b2c;
+  border-radius: 8px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 44px;
+  margin: 50px 0;
+  text-align: center;
+  cursor: pointer;
+  color: #FFFFFF;
+  /* display: inline-block; */
+  float: left;
+  /* margin: 0 auto; */
+  background-color: #2b2b2c;
+  transition: all 0.8s ease;
+}
+
+
+.joinCommunity {
+  box-sizing: border-box;
+
+  width: 180px;
+  height: 44px;
+  display: block;
+  border: 1px solid #2B2B2C;
+  border-radius: 8px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 44px;
+  /* identical to box height, or 178% */
+  margin: 50px auto;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  /* display: inline-block; */
+  cursor: pointer;
+  text-align: center;
+
+  /* background: url(../../assets/image/arrow.svg) no-repeat right; */
+  /* background-position-x: 160px; */
+  /* background-size: 50%; */
+  /* margin-left: 20px; */
+}
+
+
+
+
+/* Rayen */
+
+.button {
+  /* float: left; */
+  /* min-width: 150px;
+  max-width: 250px; */
+
+  display: block;
+  border: none;
+  /* background-color: #2b2b2c; */
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button>span {
+  vertical-align: middle;
+}
+
+.button--rayen {
+  overflow: hidden;
+  padding: 0;
+}
+
+.button--rayen.button--inverted {
+  color: #fff;
+}
+
+.button--rayen::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000001;
+  background: linear-gradient(317.77deg, #FEBCC5 -2.82%, #A1BCDE 66.28%, #50B3B4 136.11%);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.button--rayen.button--inverted::before {
+  background: #fff;
+  color: #37474f;
+}
+
+.button--rayen>span {
+  display: block;
+}
+
+.button--rayen::before,
+.button--rayen>span {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.button--rayen:hover::before {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.button--rayen:hover>span {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+
+.joinCommunity:hover {
+  /* background: url(../../assets/image/arrowrRight.svg) no-repeat right; */
+  /* background: #fff; */
+  color: #000;
+  /* background-position-x: 160px; */
+}
+
+
+.nav-cta-btn:hover {
+  background-color: var(--qubex-white);
+  color: var(--qubex-black);
+  border: 1px solid #020202;
+  transition: all 0.8s ease;
+}
+
+
+/* .bannerButton:hover {
+  background: linear-gradient(317.77deg, #FEBCC5 -2.82%, #A1BCDE 66.28%, #50B3B4 136.11%);
+  color: #000;
+  border: 1.5px solid #020202;
+  transition: all 0.3s ease;
+} */
+
+@media screen and (max-width: 768px) {
+  .bannerContent {
+    margin-top: 40px;
+  }
+
+  .bannerBg1 {
+    width: 100%;
+    height: 567px;
+    background: url("../../assets/image/m/banner.png") no-repeat center;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  .bannerSlogan {
+    font-size: 30px;
+    line-height: 56px;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 10px;
+    /* text-align: center; */
+  }
+
+  .bannerContainer {
+    height: 1050px;
+  }
+
+  .bannerBg1 {
+    height: 800px;
+  }
+
+  .bannerText {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .joinCommunity {
+    width: 82%;
+    height: 60px;
+    margin: 250px auto 20px auto;
+    line-height: 60px;
+    display: block;
+    color: #000;
+    background: linear-gradient(317.77deg, #FEBCC5 -2.82%, #A1BCDE 66.28%, #50B3B4 136.11%);
+  }
+}

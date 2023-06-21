@@ -1,0 +1,18 @@
+.RevolvingDoor {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 143px;
+
+  margin: auto;
+}
+
+.revolvingDoorImg {
+  width: 100%;
+  height: 143px;
+  background: url("../../assets/image/Revolvingdoor.png");
+  background-position: right 10px;
+}
+
+
+@media screen and (max-width: 768px) {}

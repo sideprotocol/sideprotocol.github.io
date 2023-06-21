@@ -1,0 +1,104 @@
+.carouselContainer {
+  margin-top: 100px;
+  position: relative;
+  height: 700px;
+
+  /* max-width: 1240px; */
+  overflow: hidden;
+}
+
+.carouselContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1240px;
+  z-index: 400;
+}
+
+.carouselImage {
+  width: 750px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.carouselImage img {
+  width: auto;
+  height: 400px;
+}
+
+
+
+.carouselContentImg {
+  transform-style: preserve-3d;
+  /* animation: coolAnimation 5s infinite; */
+}
+
+
+@keyframes coolAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1) rotateX(360deg) rotateY(180deg) rotateZ(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.2) rotateX(540deg) rotateY(360deg) rotateZ(180deg);
+  }
+}
+
+
+
+.carouselText,
+.carouselItemDetail {
+  width: 750px;
+  font-family: "Panchang";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.carouselItemDetail {
+  cursor: pointer;
+  width: max-content;
+  margin-top: 60px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .carouselContainer {
+    height: 420px;
+  }
+
+  .carouselContent {
+    width: 100%;
+  }
+
+  .carouselImage {
+    width: 250px;
+    height: 130px;
+    background-size: cover !important;
+  }
+
+  .carouselImage img {
+    width: 250px;
+    height: 130px;
+  }
+
+  .carouselText,
+  .carouselItemDetail {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .carouselItemArrow {
+    width: 16px;
+    height: 16px;
+  }
+}

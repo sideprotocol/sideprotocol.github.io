@@ -1,0 +1,302 @@
+.subscriptionContainer {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 400px;
+  padding-top: 80px;
+}
+
+.footerFlex {
+  width: 1240px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  /* height: 200px; */
+}
+
+.footerGithub,
+.footerTwitter,
+.footerMedium,
+.footerInstagram,
+.footerM {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 30px;
+  width: 30px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  opacity: .5;
+  transition: .3s;
+}
+
+.footerIcon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.footerInstagram {
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/shu.svg");
+}
+
+.footerMedium {
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/disc.svg");
+}
+
+.footerTwitter {
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/tuite.svg");
+}
+
+.footerM {
+  width: 32px;
+  height: 31px;
+  background: url("../../assets/image/subscription/m.svg");
+  background-size: cover;
+  vertical-align: bottom;
+  /* margin: 0 8px 0 -6px; */
+  /* margin: -10px -6px 0 16px; */
+  vertical-align: inherit;
+}
+
+.footerGithub {
+  width: 35px;
+  height: 31px;
+  background: url("../../assets/image/subscription/github.svg");
+}
+
+.footerText {
+  font-family: "Outfit";
+  font-size: 14px;
+  position: relative;
+}
+
+.footerWangzhi {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-top: 50px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.footerWangzhi:hover {
+  opacity: 1;
+}
+
+.arrowRight {
+  width: 24px;
+  height: 24px;
+  background: url(../../assets/image/arrowrRight.svg) no-repeat;
+  position: absolute;
+  left: 420px;
+  top: 63px;
+}
+
+.input {
+  width: 476px;
+  height: 59px;
+
+  background: #1B1B1B;
+  border-radius: 12px;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  transition: .3s;
+  /* border: 1px solid #1B1B1B; */
+  /* border-color: transparent */
+}
+
+.input:hover {
+  border: 1px solid #fff;
+}
+
+.Send {
+  position: absolute;
+  left: 370px;
+  top: 62px;
+  width: 100px;
+  height: 30px;
+  /* background: red; */
+  /* visibility: hidden; */
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.footerFlex .h3 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #FFFFFF;
+  margin-top: 0px;
+  opacity: .5;
+  transition: .3s;
+}
+
+.footerText:hover,
+.footerFlex .h3:hover {
+  opacity: 1;
+}
+
+.footerTop {
+  width: 1240px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footerTop h5 {
+  flex: 1;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  align-items: center;
+  letter-spacing: 0.19023px;
+
+  color: #BDD5F2;
+}
+
+.footerTop ul {
+  flex: 1;
+}
+
+.footerTop ul li {
+  float: right;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  margin-right: 60px;
+  /* identical to box height */
+  cursor: pointer;
+  color: #A2A2A2;
+  transition: .6s;
+}
+
+.ficonP {
+  display: block;
+}
+
+.ficonM {
+  display: none;
+}
+
+.footerTop ul li:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .subscriptionContainer {
+    height: 390px;
+    padding-top: 40px;
+    background: transparent;
+  }
+
+  .ficonP {
+    display: none;
+  }
+
+  .ficonM {
+    width: 100%;
+    display: block;
+  }
+
+  .footerTop {
+    width: 88%;
+  }
+
+  .footerInstagram {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/shu.svg");
+  }
+
+  .footerMedium {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/disc.svg");
+  }
+
+  .footerTwitter {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/tuite.svg");
+  }
+
+  .footerM {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/m.svg");
+    background-size: cover;
+    vertical-align: bottom;
+    /* margin: 0 8px 0 -6px; */
+    /* margin: -10px -6px 0 16px; */
+    vertical-align: inherit;
+  }
+
+  .footerGithub {
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/image/subscription/github.svg");
+  }
+
+  .footerGithub,
+  .footerTwitter,
+  .footerMedium,
+  .footerInstagram,
+  .footerM {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .footerFlex {
+    width: 88%;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .footerWangzhi {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footerFlex {
+    display: block !important;
+  }
+
+  .arrowRight {
+    left: 90%;
+  }
+
+  .footerFlex .h3 {
+    opacity: 1;
+  }
+
+  .Send {
+    /* background: red; */
+    left: 260px;
+  }
+
+  .footerIcons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
