@@ -81,9 +81,7 @@ export function Subscription() {
           <Box marginBottom="10px" className="footerIcons">
             <Box
               className="footerInstagram footerIcon"
-              onClick={() =>
-                window.open("https://www.instagram.com/", "_blank")
-              }
+              onClick={() => window.open("https://docs.side.one/", "_blank")}
             />
             <Box
               className="footerMedium footerIcon"
