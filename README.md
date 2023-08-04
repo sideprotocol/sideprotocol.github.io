@@ -1,2 +1,3 @@
 # sideprotocol.github.io
-The Official Side of Side Protocol
+
+This is special repo of github
