@@ -1,4 +1,6 @@
+'use client';
 import Image from 'next/image';
+
 import sides from './img/side_s.webp';
 import sidei from './img/side_i.webp';
 import sided from './img/side_d.webp';
@@ -25,12 +27,11 @@ const WordItem = ({ title, subTitle, pic }) => {
 export default function WordSIDE() {
   return (
     <div className="">
-      <div className="flex items-center w-[400vw]">
-        <WordItem title="S" subTitle="calability" pic={sides} />
-        <WordItem title="I" subTitle="nteroperability" pic={sidei} />
-        <WordItem title="D" subTitle="ecentralization" pic={sided} />
-        <WordItem title="E" subTitle="xchange" pic={sidee} />
-      </div>
+      <WordItem title="S" subTitle="calability" pic={sides} />
+      <WordItem title="I" subTitle="nteroperability" pic={sidei} />
+      <WordItem title="D" subTitle="ecentralization" pic={sided} />
+      <WordItem title="E" subTitle="xchange" pic={sidee} />
+
       <div className="grid grid-cols-4 px-[40px]">
         {[
           {
@@ -54,7 +55,7 @@ export default function WordSIDE() {
             desc: `A commitment to minimalism and specialization in decentralized asset exchange, focusing on doing one thing exceedingly well.`,
           },
         ]?.map((item, index) => (
-          <div key={index} className='opacity-60'>
+          <div key={index} className="opacity-60">
             <p className="text-xs mb-[16px]">{item?.num}</p>
             <h3 className="font-bold text-lg mb-[10px]">{item?.title}</h3>
             <p className="text-sm font-light text-[#848895]">{item?.desc}</p>
