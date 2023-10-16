@@ -6,7 +6,7 @@ import sidee from './img/side_e.webp';
 
 const WordItem = ({ title, subTitle, pic }) => {
   return (
-    <div className="flex items-center h-[100vh] w-[100vw]">
+    <div className="flex items-center w-[100vw]">
       <div className="flex-1">
         <Image src={pic} className="w-[500px] ml-[100px]" />
       </div>
@@ -24,11 +24,43 @@ const WordItem = ({ title, subTitle, pic }) => {
 
 export default function WordSIDE() {
   return (
-    <div className='flex items-center w-[400vw]'>
-      <WordItem title="S" subTitle="calability" pic={sides} />
-      <WordItem title="I" subTitle="nteroperability" pic={sidei} />
-      <WordItem title="D" subTitle="ecentralization" pic={sided} />
-      <WordItem title="E" subTitle="xchange" pic={sidee} />
+    <div className="">
+      <div className="flex items-center w-[400vw]">
+        <WordItem title="S" subTitle="calability" pic={sides} />
+        <WordItem title="I" subTitle="nteroperability" pic={sidei} />
+        <WordItem title="D" subTitle="ecentralization" pic={sided} />
+        <WordItem title="E" subTitle="xchange" pic={sidee} />
+      </div>
+      <div className="grid grid-cols-4 px-[40px]">
+        {[
+          {
+            num: '-001',
+            title: 'Scalability',
+            desc: 'The system is meticulously crafted to ensure easy deployment – with seamless and permissionless chain integration and asset listing.',
+          },
+          {
+            num: '-002',
+            title: 'Interoperability',
+            desc: `By leveraging light-client-based interoperable protocols like zkIBC and IBC, we foster seamless and secure communication between chains. Moreover, the potential integration of additional interoperable protocols could extend the ecosystem's reach to include all L1s and L2s.`,
+          },
+          {
+            num: '-003',
+            title: 'Decentralization',
+            desc: `Empowering the distribution of liquidity in a decentralized manner, restoring asset sovereignty to users, all while maintaining a user-friendly experience.`,
+          },
+          {
+            num: '-004',
+            title: 'Exchange',
+            desc: `A commitment to minimalism and specialization in decentralized asset exchange, focusing on doing one thing exceedingly well.`,
+          },
+        ]?.map((item, index) => (
+          <div key={index} className='opacity-60'>
+            <p className="text-xs mb-[16px]">{item?.num}</p>
+            <h3 className="font-bold text-lg mb-[10px]">{item?.title}</h3>
+            <p className="text-sm font-light text-[#848895]">{item?.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
