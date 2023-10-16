@@ -4,7 +4,7 @@ import sideLogo from './icon/side_logo.svg';
 
 export default function NavBar() {
   return (
-    <div className="flex items-center justify-center text-[#A1A1A1] relative h-[80px] space-x-[80px]">
+    <div className="flex items-center justify-center text-[#A1A1A1] relative h-[80px] space-x-[80px] z-50">
       <Image src={sideLogo} alt="side" className="w-[120px] absolute left-[40px]" />
       <Link href="/" className="text-[#63A2FF]">
         Developers

@@ -1,8 +1,5 @@
 import Banner from './components/Banner';
-import WordS from './components/WordS';
-import WordI from './components/WordI';
-import WordD from './components/WordD';
-import WordE from './components/WordE';
+import WordSIDE from './components/WordSIDE';
 import Market from './components/Market';
 import Exchange from './components/Exchange';
 import Zk from './components/Zk';
@@ -15,12 +12,7 @@ export default function Home() {
   return (
     <main className="">
       <Banner />
-      <div>
-        <WordS />
-        <WordI />
-        <WordD />
-        <WordE />
-      </div>
+      <WordSIDE />
       <Market />
       <Exchange />
       <Zk />
