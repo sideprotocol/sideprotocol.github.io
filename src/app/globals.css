@@ -10,3 +10,11 @@ body {
   background: rgb(var(--foreground-rgb));
   color: #fff;
 }
+
+.app section {
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 6rem;
+  position: relative;
+  width: 100vw;
+}

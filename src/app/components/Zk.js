@@ -5,7 +5,7 @@ import sideZkLogo from "./img/side_zk_logo.svg";
 
 export default function Zk() {
   return (
-    <div>
+    <div className="w-full">
       <div
         className="flex items-center justify-around px-10 my-40"
         style={{ borderBottom: "1px solid #363636" }}
@@ -19,7 +19,7 @@ export default function Zk() {
           </div>
         </div>
         <div>
-          <Image src={sideZk} className="w-[520px] h-[320px]" />
+          <Image src={sideZk} className="w-[820px] h-[580px]" />
         </div>
       </div>
     </div>

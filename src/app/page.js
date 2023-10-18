@@ -10,7 +10,7 @@ import Involved from './components/Involved';
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="app">
       <Banner />
       <WordSIDE />
       <Market />

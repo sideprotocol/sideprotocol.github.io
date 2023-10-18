@@ -4,7 +4,7 @@ import sideExchange from "./img/side_exchange.webp";
 import sideExchangeLogo from "./img/side_exchange_logo.svg";
 
 export default function Exchange() {
-  return <div>
+  return <div className="w-full">
      <div className="flex items-center justify-around px-10"
      style={{ borderBottom: "1px solid #363636" }}>
         <div>
