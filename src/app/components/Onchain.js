@@ -40,7 +40,7 @@ export default function Onchain() {
         {BlockList.map((block, index) => {
           return (
             <div
-              className="flex items-center justify-between border-2 rounded-2xl border-[#252932] p-9"
+              className="flex items-center justify-between border-2 rounded-2xl border-[#252932] px-9 py-4"
               key={index}
             >
               <div className="">
@@ -57,13 +57,13 @@ export default function Onchain() {
       </div>
       {/*  */}
       <div className=" mt-10 ">
-        <div className="flex items-center justify-between border-2 rounded-2xl border-[#252932] p-9">
+        <div className="flex items-center justify-between border-2 rounded-2xl border-[#252932] px-9 py-4">
           <div className="">
             <div className="font-bold text-[26px] mb-10">
               {Block.title}
               <span className="text-[#ffffff80] "> {Block.subtitle}</span>
             </div>
-            <div className="w-[300px] text-[#848895] text-base">{Block.content}</div>
+            <div className="w-[600px] text-[#848895] text-base">{Block.content}</div>
           </div>
           <Image src={Block.img} className={`${Block.imgStyle}`} />
         </div>

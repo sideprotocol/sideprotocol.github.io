@@ -14,7 +14,7 @@ body {
 .app section {
   box-sizing: border-box;
   height: 100vh;
-  padding-top: 6rem;
+  margin-top: 6rem;
   position: relative;
-  width: 100vw;
+  width: 100-topvw;
 }
