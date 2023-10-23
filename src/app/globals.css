@@ -9,9 +9,10 @@
 body {
   background: rgb(var(--foreground-rgb));
   color: #fff;
+  width: 100%;
 }
 
-section {
+.one-page {
   box-sizing: border-box;
   height: 100vh;
   margin-top: 80px;
@@ -20,18 +21,18 @@ section {
 }
 
 /* NavBar style */
-.navbar-select{
+.navbar-select {
   position: relative;
-  color: #63A2FF;
+  color: #63a2ff;
 }
-.navbar-select::after{
+.navbar-select::after {
   position: absolute;
   content: '';
   display: inline-block;
   width: 5px;
   height: 5px;
   border-radius: 9999px;
-  background-color: #63A2FF;
+  background-color: #63a2ff;
   bottom: -8px;
   left: 50%;
   transform: translate(-50%, -50%);

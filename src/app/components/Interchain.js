@@ -34,7 +34,7 @@ export default function Interchain() {
     },
   ];
   return (
-    <section className="" style={{ borderBottom: "1px solid #363636" }}>
+    <section className="one-page border-b border-solid border-[#363636]">
       <div className="text-[42px] font-semibol text-center">
         Interchain Stack
       </div>

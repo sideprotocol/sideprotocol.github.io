@@ -6,7 +6,7 @@ import sidetwitter from "./icon/sidetwitter.svg";
 
 export default function Banner() {
   return (
-    <section>
+    <section className="one-page">
       <div className="h-full w-full relative">
         <div className="px-7 py-1 h-full w-full absolute z-0">
           <Image

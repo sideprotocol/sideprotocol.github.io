@@ -34,7 +34,7 @@ export default function Onchain() {
       "With unmatched scalability and single-block finality, the backbone of SIDE enables it to effortlessly cater to the transaction demands of the evolving Web3 landscape.",
   };
   return (
-    <section className="px-12">
+    <section className="one-page px-12">
       {/*  */}
       <div className="grid grid-cols-2 gap-10">
         {BlockList.map((block, index) => {

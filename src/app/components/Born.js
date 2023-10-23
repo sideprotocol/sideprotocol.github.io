@@ -9,7 +9,7 @@ export default function Born() {
   // });
 
   return (
-    <section className="">
+    <section className="one-page">
       <Image src={sideBorn} className="w-full h-full absolute -z-10" alt="side"/>
       <div className="flex flex-col justify-center text-4xl font-semibold items-center h-full w-full">
         <div data-aos="fade-right">THE WEB3 TECHNOLOGY PROJECT</div>

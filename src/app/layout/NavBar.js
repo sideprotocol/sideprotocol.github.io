@@ -1,38 +1,33 @@
-"use client";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import sideLogo from "./icon/side_logo.svg";
+'use client';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import sideLogo from './icon/side_logo.svg';
+import NavBarH5 from './NavBarH5';
 
-export default function NavBar() {
+function NavBarWeb() {
   const linkList = [
-    { title: "Developers", url: "/", id: "0" },
-    { title: "Community", url: "/", id: "1" },
-    { title: "Explorer", url: "/", id: "2" },
-    { title: "About", url: "/", id: "3" },
+    { title: 'Developers', url: '/', id: '0' },
+    { title: 'Community', url: '/', id: '1' },
+    { title: 'Explorer', url: '/', id: '2' },
+    { title: 'About', url: '/', id: '3' },
   ];
-  const [tab, setTab] = useState("0");
+  const [tab, setTab] = useState('0');
   useEffect(() => {});
   return (
     <header
       data-aos="fade-down"
       data-aos-duration="2000"
-      className="w-full h-[80px] z-50 fixed top-0 left-0 backdrop-blur-lg"
+      className="hidden md:block w-full h-[80px] z-50 fixed top-0 left-0 backdrop-blur-lg"
     >
       <div className="overflow-hidden backdrop-blur-lg w-full h-full flex items-center justify-center text-[#A1A1A1] relative space-x-[80px]">
-        <Image
-          src={sideLogo}
-          alt="side"
-          className="w-[120px] absolute left-[40px]"
-        />
+        <Image src={sideLogo} alt="side" className="w-[120px] absolute left-[40px]" />
         {linkList.map((linkItem, index) => {
           return (
             <Link
               key={index}
               href={linkItem.url}
-              className={`${
-                linkItem.id === tab ? "text-[#63A2FF] navbar-select" : ""
-              }`}
+              className={`${linkItem.id === tab ? 'text-[#63A2FF] navbar-select' : ''}`}
               onClick={() => {
                 setTab(linkItem.id);
               }}
@@ -43,5 +38,14 @@ export default function NavBar() {
         })}
       </div>
     </header>
+  );
+}
+
+export default function NavBar() {
+  return (
+    <>
+      <NavBarWeb />
+      <NavBarH5 />
+    </>
   );
 }
