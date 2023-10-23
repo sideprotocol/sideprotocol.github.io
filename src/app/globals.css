@@ -18,3 +18,22 @@ section {
   position: relative;
   width: 100-topvw;
 }
+
+/* NavBar style */
+.navbar-select{
+  position: relative;
+  color: #63A2FF;
+}
+.navbar-select::after{
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background-color: #63A2FF;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* NavBar style */

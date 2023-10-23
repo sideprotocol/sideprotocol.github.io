@@ -2,11 +2,11 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import sideBorn from "./img/side_born.webp";
-import AOS from "aos";
+// import AOS from "aos";
 export default function Born() {
-  useEffect(() => {
-    AOS.init();
-  });
+  // useEffect(() => {
+  //   AOS.init();
+  // });
 
   return (
     <section className="">
