@@ -14,9 +14,9 @@ body {
 section {
   box-sizing: border-box;
   height: 100vh;
-  margin-top: 6rem;
+  margin-top: 80px;
   position: relative;
-  width: 100-topvw;
+  width: 100vw;
 }
 
 /* NavBar style */
