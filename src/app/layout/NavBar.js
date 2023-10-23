@@ -9,7 +9,7 @@ export default function NavBar() {
     { title: "Developers", url: "/", id: "0" },
     { title: "Community", url: "/", id: "1" },
     { title: "Explorer", url: "/", id: "2" },
-    { title: "About", url: "/about", id: "3" },
+    { title: "About", url: "/", id: "3" },
   ];
   const [tab, setTab] = useState("0");
   useEffect(() => {});
