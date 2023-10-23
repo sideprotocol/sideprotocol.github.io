@@ -4,6 +4,9 @@ import "./globals.css";
 import { Outfit } from "next/font/google";
 import NavBar from "./layout/NavBar";
 import Footer from "./layout/Footer";
+import PageSelect from "./layout/PageSelect";
+
+
 
 const outfitFont = Outfit({
   subsets: ["latin"],
@@ -23,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className={outfitFont.className}>
         <NavBar />
         {children}
+        <PageSelect/>
         <Footer />
       </body>
     </html>
