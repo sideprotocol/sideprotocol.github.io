@@ -11,7 +11,7 @@ export default function Banner() {
         <div className="px-7 py-1 h-full w-full absolute z-0">
           <Image
             src={sideBanner}
-            className="w-full z-0 border-2 border-[#121111] rounded-3xl border-white"
+            className="w-full z-0 border-2 border-[#121111] rounded-3xl"
             style={{height: 'calc(100% - 80px)'}}
             alt="side"
           />
