@@ -13,6 +13,7 @@ export default function Market() {
           <Image
             src={sideMarketRound}
             className="h-[60px] w-[60px] absolute -top-[60px] -left-[120px]"
+            alt="side"
           />
           <div>EMBRACE SIDE AND</div>
           <div>TRANSFORM POSSIBILITIES</div>
@@ -20,6 +21,7 @@ export default function Market() {
           <Image
             src={sideMarketIcon}
             className="h-[52px] w-[52px] absolute right-[52px]"
+            alt="side"
           />
         </div>
       </div>
@@ -29,7 +31,7 @@ export default function Market() {
         style={{ borderBottom: "1px solid #363636" }}
       >
         <div className="">
-          <Image src={sideMarketLogo} className="mb-5" />
+          <Image src={sideMarketLogo} className="mb-5" alt="side"/>
           <div className="text-[28px]">With unmatched scalability and</div>
           <div className="text-[28px]">single-blocke evolving </div>
           <div className="mt-12 cursor-pointer rounded-full inline-block bg-[#262626] text-[20px] px-10 py-5">
@@ -38,7 +40,7 @@ export default function Market() {
         </div>
 
         <div>
-          <Image src={sideMarket} className="w-[520px] h-[520px]" />
+          <Image src={sideMarket} className="w-[520px] h-[520px]" alt="side"/>
         </div>
       </div>
     </div>

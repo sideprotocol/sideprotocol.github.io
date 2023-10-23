@@ -14,10 +14,10 @@ export default function NavBar() {
   const [tab, setTab] = useState("0");
   useEffect(() => {});
   return (
-    <div
-      className="flex items-center justify-center text-[#A1A1A1] relative h-[80px] space-x-[80px] z-50"
+    <header
       data-aos="fade-down"
       data-aos-duration="2000"
+      className="flex items-center justify-center text-[#A1A1A1] relative h-[80px] space-x-[80px] z-50"
     >
       <Image
         src={sideLogo}
@@ -40,6 +40,6 @@ export default function NavBar() {
           </Link>
         );
       })}
-    </div>
+    </header>
   );
 }

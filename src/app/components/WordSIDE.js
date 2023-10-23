@@ -10,7 +10,7 @@ const WordItem = ({ title, subTitle, pic }) => {
   return (
     <div className="flex items-center w-[100vw]">
       <div className="flex-1">
-        <Image src={pic} className="w-[500px] ml-[100px]" />
+        <Image src={pic} className="w-[500px] ml-[100px]" alt="side"/>
       </div>
       <div className="relative mr-[100px]">
         <div className="bg-[rgb(var(--foreground-rgb))] absolute left-0 w-[2px] z-20 top-[20px] bottom-[20px]" />

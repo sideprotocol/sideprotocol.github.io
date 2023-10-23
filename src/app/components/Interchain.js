@@ -63,12 +63,12 @@ export default function Interchain() {
       </div>
       {/* tab content */}
       <div className="flex items-center justify-center gap-20 mt-14">
-        <Image src={tabList[tab].img} className={`${tabList[tab].imgStyle}`}/>
+        <Image src={tabList[tab].img} className={`${tabList[tab].imgStyle}`} alt="side"/>
         <div>
           <div className="text-4xl font-semibold mb-8">{tabList[tab].title}</div>
           <div className="text-[28px] font-light w-[400px]">{tabList[tab].subTitle}</div>
           <div className="mt-9 cursor-pointer">
-            <Image src={sideGo} className="" />
+            <Image src={sideGo} className="" alt="side"/>
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ export default function Onchain() {
                 </div>
                 <div className="w-[300px] text-[#848895] text-base">{block.content}</div>
               </div>
-              <Image src={block.img} className={`${block.imgStyle}`} />
+              <Image src={block.img} className={`${block.imgStyle}`} alt="side"/>
             </div>
           );
         })}
@@ -65,7 +65,7 @@ export default function Onchain() {
             </div>
             <div className="w-[600px] text-[#848895] text-base">{Block.content}</div>
           </div>
-          <Image src={Block.img} className={`${Block.imgStyle}`} />
+          <Image src={Block.img} className={`${Block.imgStyle}`} alt="side"/>
         </div>
       </div>
     </section>
