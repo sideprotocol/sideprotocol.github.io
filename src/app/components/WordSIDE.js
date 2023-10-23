@@ -8,7 +8,7 @@ import sidee from './img/side_e.webp';
 
 const WordItem = ({ title, subTitle, pic }) => {
   return (
-    <div className="flex items-center w-[100vw]">
+    <div className="flex items-center">
       <div className="flex-1">
         <Image src={pic} className="w-[500px] ml-[100px]" alt="side"/>
       </div>

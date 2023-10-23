@@ -7,7 +7,7 @@ import sidetwitter from './icon/sidetwitter.svg';
 export default function Banner() {
   return (
     <div className="h-[calc(100vh-80px)] relative">
-      <Image src={sideBanner} className="h-full w-full absolute bottom-0 z-0 border-2 border-[#121111] rounded-3xl m-5" alt="side" />
+      <Image src={sideBanner} className="h-full left-0 right-0 absolute bottom-0 z-0 border-2 border-[#121111] rounded-3xl m-5" alt="side" />
       <div className="absolute right-[40px] mt-[30vh] z-20">
         <a className="py-[10px] block" href="https://discord.com/invite/GN99earcFR" target="_blank">
           <Image src={sidediscord} className="w-[30px]" alt="side" />

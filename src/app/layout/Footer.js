@@ -121,7 +121,7 @@ export default function Footer() {
   ];
   return (
     <section className="">
-      <div className="w-full h-full flex flex-col justify-center mx-14">
+      <div className="h-full flex flex-col justify-center mx-14">
         <div className="">
           <Image src={sidelogo} className="w-[160px]" alt="side" />
         </div>

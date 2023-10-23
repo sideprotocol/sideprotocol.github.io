@@ -57,7 +57,7 @@ export default function Onchain() {
       </div>
       {/*  */}
       <div className=" mt-10 ">
-        <div className="flex items-center justify-between border-2 rounded-2xl border-[#252932] px-9 py-4">
+        <div className="flex items-center justify-between border-2 rounded-2xl border-[#252932] px-9 py-4 overflow-hidden">
           <div className="">
             <div className="font-bold text-[26px] mb-10">
               {Block.title}
