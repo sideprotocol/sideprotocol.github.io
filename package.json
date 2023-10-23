@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.40",
+    "aos": "^3.0.0-beta.6",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.6",
+    "@types/aos": "^3.0.6",
     "autoprefixer": "^10",
     "postcss": "^8",
     "tailwindcss": "^3"

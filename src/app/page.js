@@ -9,6 +9,7 @@ import Born from './components/Born';
 import Involved from './components/Involved';
 
 export default function Home() {
+ 
   return (
     <main className="app">
       <Banner />

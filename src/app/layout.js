@@ -1,17 +1,21 @@
-import './globals.css';
-import { Outfit } from 'next/font/google';
-import NavBar from './layout/NavBar';
-import Footer from './layout/Footer';
+import "aos/dist/aos.css";
+import "./globals.css";
+
+import { Outfit } from "next/font/google";
+import NavBar from "./layout/NavBar";
+import Footer from "./layout/Footer";
 
 const outfitFont = Outfit({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
-  title: 'Side',
-  description: 'The Exchange Layer of Web3',
+  title: "Side",
+  description: "The Exchange Layer of Web3",
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
