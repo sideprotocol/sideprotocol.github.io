@@ -11,7 +11,7 @@ body {
   color: #fff;
 }
 
-.app section {
+section {
   box-sizing: border-box;
   height: 100vh;
   margin-top: 6rem;
